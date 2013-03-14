@@ -1,0 +1,10 @@
+<% if @error %>
+<h3>Invalid Login: <%= @error %></h3>
+<% end %>
+
+<form method="post" action="/login">
+  <p>Please Login below:</p>
+  Email: <input type="text" name="post[email]"><br>
+  Password: <input type="password" name="post[password]"><br>
+  <input type="submit" value="Submit"><br>
+</form>
